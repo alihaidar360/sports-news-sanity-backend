@@ -20,4 +20,11 @@ export const tweet = defineType({
       to: [{ type: "sportCategory" }],
     }),
   ],
+
+  preview: {
+    select: {
+      title: "url",
+      subtitle: "sport.name",
+    },
+  },
 });
