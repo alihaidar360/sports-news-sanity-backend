@@ -37,11 +37,6 @@ export const tweet = defineType({
       options: { hotspot: true },
     }),
     defineField({
-      name: "videoUrl",
-      title: "Video URL",
-      type: "url",
-    }),
-    defineField({
       name: "tweetDate",
       title: "Tweet Date",
       type: "datetime",
