@@ -43,12 +43,19 @@ export const article = defineType({
         hotspot: true,
       },
     }),
-
+    defineField({
+     name: "trendingRank",
+     title: "Trending Rank",
+     type: "number",
+     initialValue: 999,
+     validation: (Rule) => Rule.required(),
+    }),
     defineField({
       name: "publishedAt",
       title: "Published At",
       type: "datetime",
     }),
+    
 
     defineField({
       name: "sport",
